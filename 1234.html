@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="background.css">
+<style>
+.spotify
+{
+    position: absolute;
+	right: 80px;
+	top: 100px;
+}
+
+div {
+    background-color: rgb(20, 20, 108);
+    display: none;
+    height: 152px;
+    width: 350px;
+}
+</style>
+<script>
+$(function(){
+    $('.menu').click(function(){
+        $('.spotify').toggle(0);
+    });
+});
+</script>
+</head>
+
+<body>
+
+<div class="menu">
+    <a href="index.html" class="active"><span class="icon fa fa-home"></span> <span class="text">Home</span></a>
+    <a href="#"><span class="icon fa fa-clock-o"></span> <span class="text">Timer</span></a>
+    <a href="#"><span class="icon fa fa-sticky-note"></span> <span class="text">Note</span></a>
+    <a href="https://www.google.com" target="_blank"><span class="icon fa fa-search"></span> <span class="text">Search</span></a>
+    <a href="#"><span class="icon fa fa-spotify"></span> <span class="text">Spotify</span></a>
+    <a href="#"><span class="icon fa fa-youtube-play"></span> <span class="text">Youtube</span></a>
+</div>
+<div class="spotify">
+    <iframe style="border-radius:20px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX7GTqMQDhOum?utm_source=generator&theme=0" 
+    width="350" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy"></iframe>
+</div>
+</body>
+</html>
+
+
+<p id="work" class ="label">&nbsp &nbsp Prodomo-timer</p>
+
+.label {
+    color: white;
+    display: center;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 100;
+}
